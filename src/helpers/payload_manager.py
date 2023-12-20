@@ -1,6 +1,6 @@
-def payload_creat_booking():
+def payload_create_booking():
     payload = {
-        "firstname": "Josh",
+        "firstname": "Joshi",
         "lastname": "Allen",
         "totalprice": 111,
         "depositpaid": True,
@@ -19,3 +19,4 @@ def payload_create_token():
         "password": "password123"
     }
     return payload
+
