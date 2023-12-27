@@ -4,7 +4,7 @@ from src.constants.api_constants import APIConstants
 from src.helpers.api_requests_wrapper import post_requests
 from src.helpers.api_requests_wrapper import put_requests, delete_requests
 from src.helpers.common_verification import verify_http_status_code, verify_response_key_should_not_be_none
-from src.helpers.payload_manager import payload_create_token, payload_create_booking
+from src.helpers.payload_manager import payload_create_token,payload_create_booking_tc2,payload_create_booking
 from src.helpers.utils import common_headers_for_put_delete_patch
 from src.helpers.utils import common_headers_json
 
@@ -50,13 +50,13 @@ class TestCreateBooking(object):
 
         response = put_requests(url=put_url, auth=None,
                                 headers=common_headers_for_put_delete_patch(),
-                                payload=payload_create_booking(),
+                                payload=payload_create_booking_tc2(),
                                 in_json=False)
         print(response)
 
     def test_delete_booking(self, create_token, create_booking):
         bookingId = create_booking
-        put_url = APIConstants.url_create_booking() + "/" + str(bookingId)
+        put_url = APIConstants.url_create_booking() + "/" + str(3513)
 
         response = delete_requests(url=put_url, auth=None,
                                    headers=common_headers_for_put_delete_patch(),

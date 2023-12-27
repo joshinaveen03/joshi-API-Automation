@@ -24,8 +24,8 @@ def payload_create_token():
 
 def payload_create_booking_tc2():
     payload = {
-        "firstname": "Joshi",
-        "lastname": "Allen",
+        "firstname": "Naveen",
+        "lastname": "Joshi",
         "totalprice": 111,
         "depositpaid": True,
         "bookingdates": {
