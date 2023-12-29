@@ -27,3 +27,10 @@ pip install allure-pytest
 
 ## Auto RUN COMMAND
 pytest -n auto tests/integration_test/test_crud.py -s -v  
+
+
+## install 
+
+pip install openpyxl
+pip install xdist
+

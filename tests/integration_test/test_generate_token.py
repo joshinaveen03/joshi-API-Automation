@@ -7,7 +7,8 @@ def test_create_token():
     response=post_requests(url=APIConstants.url_create_token(),
                            payload=payload_create_token(),
                            headers=common_headers_json(),
-                           auth=None,in_json=False)
+                           auth=None,
+                           in_json=False)
     print(response)
 
     token=response.json()["token"]

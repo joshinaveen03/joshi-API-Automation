@@ -1,0 +1,10 @@
+admin password123
+<Response [200]>
+admin password123
+<Response [200]>
+admin 123
+<Response [200]>
+admin {}
+<Response [200]>
+admin123 []
+<Response [200]>
